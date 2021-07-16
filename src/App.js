@@ -40,7 +40,7 @@ export default class App extends Component {
    changeFilter = e => {
     this.setState({ filter: e.currentTarget.value });
   };
-    getVisibleTodos = () => {
+    getVisibleContact = () => {
     const { filter, contacts } = this.state;
     const normalizedFilter = filter.toLowerCase();
 
@@ -53,7 +53,7 @@ export default class App extends Component {
       <div className={styles.container}>
         <Form onSubmit={this.formSubmitHandler} />
         <Filter value={this.state.filter} onChange={this.changeFilter}  />
-        <ContactList contacts={this.getVisibleTodos()} onDeleteContact={this.deleteContact}  />
+        <ContactList contacts={this.getVisibleContact()} onDeleteContact={this.deleteContact}  />
       </div>
     )
   }
