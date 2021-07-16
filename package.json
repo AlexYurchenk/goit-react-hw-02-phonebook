@@ -1,6 +1,7 @@
 {
   "name": "goit-react-hw-02-phonebook",
   "version": "0.1.0",
+  "homepage": "https://AlexYurchenk.github.io/goit-react-hw-02-phonebook",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
@@ -38,18 +39,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "description": "This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).",
-  "main": "index.js",
-  "devDependencies": {},
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/AlexYurchenk/goit-react-hw-02-phonebook.git"
-  },
-  "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/AlexYurchenk/goit-react-hw-02-phonebook/issues"
-  },
-  "homepage": "https://github.com/AlexYurchenk/goit-react-hw-02-phonebook#readme"
+  }
 }
