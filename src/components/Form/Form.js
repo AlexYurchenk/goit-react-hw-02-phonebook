@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import styles from './Form.module.css'
 import shortid from 'shortid';
+import PropTypes from 'prop-types'; // ES6
+
 export default class Form extends Component {
     state = {
       name: '',
@@ -55,4 +57,7 @@ export default class Form extends Component {
             </form>
         )
     }
+}
+Form.propTypes  = {
+    onSubmit: PropTypes.func.isRequired,
 }

@@ -25,7 +25,7 @@ export default class App extends Component {
   };
   formSubmitHandler = data => {
     this.state.contacts.forEach(element => {
-      if (element.name === data.name) {
+      if (element.name === data.name && element.number === data.number) {
         data = -1
         return alert('contact is already in the directory')
       }
