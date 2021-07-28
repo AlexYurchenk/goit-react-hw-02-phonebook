@@ -25,12 +25,12 @@ export default class App extends Component {
   };
   formSubmitHandler = data => {
     this.state.contacts.forEach(element => {
-      if (element.name === data.name && element.number === data.number) {
-        data = -1
+      if (element.name.toLowerCase() === data.name.toLowerCase()) {
+        data.name = 'repeat'
         return alert('contact is already in the directory')
       }
     })
-    if (data === -1) {
+    if (data.name === 'repeat') {
       return
     }
       this.setState(({ contacts }) => ({
